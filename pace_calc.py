@@ -79,7 +79,7 @@ PATTERN_LABELS = {
 }
 
 PATTERN_COLORS = {
-    "ALL": "black",
+    "ALL": "orange",
     "POS": "red",
     "MED": "blue",
     "NEG": "green",

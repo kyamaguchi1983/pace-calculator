@@ -29,13 +29,7 @@ st.set_page_config(
 # --- サイドバー: 入力フォーム ---
 st.sidebar.title("800m Pace Calculator")
 
-distance = st.sidebar.number_input(
-    "Distance (m)",
-    min_value=100.0,
-    max_value=10000.0,
-    value=800.0,
-    step=100.0,
-)
+distance = 800.0
 
 time_str = st.sidebar.text_input(
     "Time (mm:ss or seconds)",
