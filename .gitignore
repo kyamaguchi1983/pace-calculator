@@ -3,3 +3,4 @@ __pycache__/
 .DS_Store
 *.png
 beep_timer.py
+data/
