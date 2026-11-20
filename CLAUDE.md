@@ -26,10 +26,12 @@ dev 全体の決まり（開発の流れ・作業の終了・安全）はその�
 - Streamlit Community Cloud。公開 URL は README.md にある。
 - GitHub の main と連携していて、push で自動で作り直される見込み。設定ファイル（`.streamlit/` など）はリポジトリにない。
 - Streamlit Cloud の設定画面で要確認: メインファイル（たぶん `pace_app.py`）、Python の版、依存を `uv.lock` と `requirements.txt` のどちらから読んでいるか。
+  - 2026-11-20 に依存を上げたあと、公開中のアプリは Streamlit 1.65.0 で動いた。3.11 以上の Python なら 1.67.0 が入るので、Python は 3.10 の見込み。`requires-python` を 3.11 以上に上げるのは、設定画面で Python の版を確かめて上げてから（先に上げると、公開中のアプリが依存を入れられずに止まるおそれがある）。
+- 長く使われないと休止する（開くと「This app has gone to sleep」と出る。ボタンを押すと 30 秒ほどで起きる）。
 
 ## 記録先
 
-- 作業ログ（worklog.md）・CHANGELOG はまだない。最初に記録するときに worklog.md を作る。
+- 作業ログは worklog.md（2026-11-20 から）。CHANGELOG はない。
 
 ## データの扱い
 
