@@ -116,7 +116,7 @@ fig.update_layout(
     height=500,
 )
 
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 
 # --- スプリットテーブル ---
 st.header("Split Table")
@@ -136,4 +136,4 @@ for key in pattern_keys:
             "Speed (km/h)": f"{spd * 3.6:.2f}",
         })
 
-    st.dataframe(rows, use_container_width=True, hide_index=True)
+    st.dataframe(rows, width="stretch", hide_index=True)
